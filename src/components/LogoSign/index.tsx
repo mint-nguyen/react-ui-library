@@ -1,12 +1,4 @@
-import {
-  Box,
-  Tooltip,
-  Badge,
-  TooltipProps,
-  tooltipClasses,
-  styled,
-  useTheme
-} from '@mui/material';
+import { Tooltip, TooltipProps, tooltipClasses, styled } from '@mui/material';
 import Link from 'src/components/Link';
 
 const LogoWrapper = styled(Link)(
@@ -38,8 +30,6 @@ const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
 }));
 
 function Logo() {
-  const theme = useTheme();
-
   return (
     <TooltipWrapper title="Mint Nguyen - Software Engineer" arrow>
       <LogoWrapper href="/">
